@@ -76,6 +76,65 @@
  * @openapi
  * components:
  *   schemas:
+ *     Category:
+ *       type: object
+ *       description: Representa una categoría de productos del sistema
+ *       required:
+ *         - id
+ *         - name
+ *         - description
+ *         - active
+ *       properties:
+ *         id:
+ *           type: number
+ *           example: 1
+ *         name:
+ *           type: string
+ *           example: Lácteos
+ *         description:
+ *           type: string
+ *           example: Productos derivados de la leche como quesos, yogures y mantequilla
+ *         active:
+ *           type: boolean
+ *           example: true
+ */
+
+/**
+ * @openapi
+ * components:
+ *   schemas:
+ *     Provider:
+ *       type: object
+ *       description: Representa un proveedor del sistema
+ *       required:
+ *         - id
+ *         - name
+ *         - email
+ *         - phone
+ *         - city
+ *       properties:
+ *         id:
+ *           type: number
+ *           example: 1
+ *         name:
+ *           type: string
+ *           example: Distribuidora Andina S.A.S.
+ *         email:
+ *           type: string
+ *           format: email
+ *           example: contacto@distribuidoraandina.com
+ *         phone:
+ *           type: string
+ *           example: +57 315 789 4512
+ *         city:
+ *           type: string
+ *           example: Cali
+ */
+
+/**
+ * @openapi
+ * components:
+ *   schemas:
  *     Order:
  *       type: object
  *       description: Representa una orden de compra del sistema
