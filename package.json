@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "tsnd --respawn --clear src/app.ts"
+    "start": "tsnd --respawn --clear src/app.ts",
+    "test": "node -r ts-node/register/transpile-only --test 'tests/**/*.spec.ts'"
   },
   "keywords": [],
   "author": "",
