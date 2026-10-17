@@ -71,4 +71,31 @@
  *           type: number
  *           example: 4500
  */
+
+/**
+ * @openapi
+ * components:
+ *   schemas:
+ *     Category:
+ *       type: object
+ *       description: Representa una categoría de productos del sistema
+ *       required:
+ *         - id
+ *         - name
+ *         - description
+ *         - active
+ *       properties:
+ *         id:
+ *           type: number
+ *           example: 1
+ *         name:
+ *           type: string
+ *           example: Lácteos
+ *         description:
+ *           type: string
+ *           example: Productos derivados de la leche como quesos, yogures y mantequilla
+ *         active:
+ *           type: boolean
+ *           example: true
+ */
 export {};
