@@ -71,4 +71,36 @@
  *           type: number
  *           example: 4500
  */
+
+/**
+ * @openapi
+ * components:
+ *   schemas:
+ *     Provider:
+ *       type: object
+ *       description: Representa un proveedor del sistema
+ *       required:
+ *         - id
+ *         - name
+ *         - email
+ *         - phone
+ *         - city
+ *       properties:
+ *         id:
+ *           type: number
+ *           example: 1
+ *         name:
+ *           type: string
+ *           example: Distribuidora Andina S.A.S.
+ *         email:
+ *           type: string
+ *           format: email
+ *           example: contacto@distribuidoraandina.com
+ *         phone:
+ *           type: string
+ *           example: +57 315 789 4512
+ *         city:
+ *           type: string
+ *           example: Cali
+ */
 export {};
