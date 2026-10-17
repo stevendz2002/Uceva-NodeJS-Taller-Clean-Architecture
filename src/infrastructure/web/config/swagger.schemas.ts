@@ -71,4 +71,41 @@
  *           type: number
  *           example: 4500
  */
+
+/**
+ * @openapi
+ * components:
+ *   schemas:
+ *     Order:
+ *       type: object
+ *       description: Representa una orden de compra del sistema
+ *       required:
+ *         - id
+ *         - orderNumber
+ *         - customerName
+ *         - total
+ *         - status
+ *       properties:
+ *         id:
+ *           type: number
+ *           example: 1
+ *         orderNumber:
+ *           type: string
+ *           example: ORD-2026-001
+ *         customerName:
+ *           type: string
+ *           example: Andres Felipe Saavedra
+ *         total:
+ *           type: number
+ *           example: 155000
+ *         status:
+ *           type: string
+ *           enum:
+ *             - COMPLETED
+ *             - PENDING
+ *             - PROCESSING
+ *             - DELIVERED
+ *             - CANCELLED
+ *           example: COMPLETED
+ */
 export {};
